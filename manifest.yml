@@ -1,0 +1,20 @@
+name: Gitlab Pipelines
+description: Show Gitlab pipelines of multiple projects in one place
+version: '1.0.3'
+manifest_version: 2
+browser_action:
+  default_popup: popup.html
+  default_icon: assets/icons/icon_32.png
+background:
+  scripts:
+    - background.js
+  persistent: false
+permissions:
+  - notifications
+  - tabs
+  - alarms
+icons:
+  16: assets/icons/icon_16.png
+  32: assets/icons/icon_32.png
+  48: assets/icons/icon_48.png
+  128: assets/icons/icon_128.png
